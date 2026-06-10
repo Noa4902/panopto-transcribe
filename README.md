@@ -43,6 +43,10 @@ curl -L -o ~/whisper-models/ggml-large-v3-turbo.bin \
 
 > The model is ~1.6 GB. You only download it once.
 
+### On Windows?
+
+The verified path is macOS (above). Windows works through WSL, but those steps have **not been tested by the author** — see **[WINDOWS.md](WINDOWS.md)** (experimental). If you try it, please report back.
+
 ---
 
 ## ⚠️ Your one responsibility: cookies
