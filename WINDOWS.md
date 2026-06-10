@@ -1,6 +1,6 @@
-# Windows (via WSL) — experimental
+# Windows (via WSL), experimental
 
-> ⚠️ **Not tested by the author.** The verified, supported path is macOS — see [README.md](README.md). These Windows instructions run the **exact same `transcribe.sh`** inside WSL (Linux on Windows), so the core is the same proven pipeline. What hasn't been confirmed is the install steps below. **If you try this, please open an issue or message me with what worked and what didn't.**
+> ⚠️ **Not tested by the author.** The verified, supported path is macOS. See [README.md](README.md). These Windows instructions run the **exact same `transcribe.sh`** inside WSL (Linux on Windows), so the core is the same proven pipeline. What hasn't been confirmed is the install steps below. **If you try this, please open an issue or message me with what worked and what didn't.**
 
 The one real difference from macOS: there's no Metal acceleration on Windows, so transcription runs on the CPU and is slower. It still works. If you have an NVIDIA GPU, whisper.cpp can be built with CUDA for a big speed-up (not covered here).
 
@@ -49,7 +49,7 @@ cd panopto-transcribe
 chmod +x transcribe.sh
 ```
 
-Export your Panopto cookies exactly as in the [README](README.md#-your-one-responsibility-cookies) (same Chrome extension), and save the file as `cookies.txt` inside this folder. Saving it from Windows into the cloned folder works — WSL can read it.
+Export your Panopto cookies exactly as in the [README](README.md#-your-one-responsibility-cookies) (same Chrome extension), and save the file as `cookies.txt` inside this folder. Saving it from Windows into the cloned folder works, because WSL can read it.
 
 ## 5. Run it
 
@@ -65,6 +65,6 @@ Transcripts land in `transcripts/`, same as on macOS.
 
 ## If something breaks
 
-- **`whisper-cli: command not found`** — the symlink in step 3 didn't take. Check that `build/bin/whisper-cli` exists and re-run the `ln -s` line.
-- **`yt-dlp downloaded nothing`** — your cookies are expired. Re-export them.
-- **Very slow** — expected on CPU. A 90-minute lecture can take a while. Leave it running.
+- **`whisper-cli: command not found`.** The symlink in step 3 didn't take. Check that `build/bin/whisper-cli` exists and re-run the `ln -s` line.
+- **`yt-dlp downloaded nothing`.** Your cookies are expired. Re-export them.
+- **Very slow.** Expected on CPU. A 90-minute lecture can take a while. Leave it running.

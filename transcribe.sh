@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# panopto-transcribe — download a Panopto recording, transcribe it locally, clean up.
+# panopto-transcribe: download a Panopto recording, transcribe it locally, clean up.
 # Everything runs on your machine. Zero cost, no API, no media ever leaves your computer.
 #
 # Usage:
@@ -51,7 +51,7 @@ echo "⬇️  Downloading from Panopto..."
 yt-dlp --cookies "$COOKIES" -f worst \
   -o "$WORKDIR/%(title)s.%(ext)s" "$URL"
 
-# --- Steps 2+3+4: for each video, extract audio -> transcribe -> clean up ---
+# --- Steps 2+3+4: for each video, extract audio, transcribe, then clean up ---
 shopt -s nullglob
 videos=("$WORKDIR"/*)
 [[ ${#videos[@]} -gt 0 ]] || die "yt-dlp downloaded nothing. Check the URL and that your cookies are still valid."
@@ -60,7 +60,7 @@ for video in "${videos[@]}"; do
   base="$(basename "${video%.*}")"
   out="$OUTDIR/$base.txt"
 
-  # Already transcribed -> skip (idempotent: safe to re-run without re-transcribing).
+  # Already transcribed, so skip it (idempotent: safe to re-run without re-transcribing).
   if [[ -f "$out" ]]; then
     echo "⏭️  Already exists, skipping: $base"
     continue
