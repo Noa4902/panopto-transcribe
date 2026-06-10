@@ -74,7 +74,7 @@ Transcribe a single recording:
 ./transcribe.sh "https://YOUR-SCHOOL.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=..."
 ```
 
-Transcribe an entire folder:
+Transcribe an entire folder (relies on yt-dlp's Panopto folder support):
 
 ```bash
 ./transcribe.sh "https://YOUR-SCHOOL.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx#folderID=..."
