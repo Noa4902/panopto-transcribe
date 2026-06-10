@@ -1,0 +1,15 @@
+# Your secret. Never goes into git.
+cookies.txt
+
+# Transcripts and temporary media
+transcripts/
+*.txt
+!cookies.example.txt
+*.wav
+*.mp4
+*.m4a
+*.webm
+*.mkv
+
+# System
+.DS_Store

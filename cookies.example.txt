@@ -1,0 +1,14 @@
+# This is an EXAMPLE file. It contains no real cookies.
+#
+# What to do:
+# 1. Install the "Get cookies.txt LOCALLY" extension in Chrome.
+# 2. Open your university's Panopto and sign in.
+# 3. Click the extension -> Export -> pick your Panopto domain.
+# 4. Save the file it gives you as `cookies.txt` in this folder.
+#
+# The format is a Netscape HTTP Cookie File. A real line looks like this
+# (fields are TAB-separated, not spaces):
+#
+# .cloud.panopto.eu	TRUE	/	TRUE	1799999999	.ASPXAUTH	<YOUR-TOKEN-HERE>
+#
+# Your cookies are your password. Never share them or commit them anywhere.
