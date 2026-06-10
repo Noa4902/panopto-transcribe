@@ -49,7 +49,7 @@ curl -L -o ~/whisper-models/ggml-large-v3-turbo.bin \
 
 Panopto recordings are behind a login, so the tool needs **your** session cookies to access them. **You generate these yourself — they are never included in this repo and must never be shared.**
 
-1. Install the **[Get cookies.txt LOCALLY](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc)** Chrome extension (open source, exports locally, sends nothing to any server).
+1. Install the **[Get cookies.txt LOCALLY](https://chromewebstore.google.com/detail/cclelndahbckbenkjhflpdbgdldlbecc)** Chrome extension (open source, exports locally, sends nothing to any server).
 2. Open your university's Panopto site and sign in.
 3. Click the extension → **Export** → choose your Panopto domain.
 4. Save the file it gives you as **`cookies.txt`** in this folder.
