@@ -1,5 +1,7 @@
 # Windows (via WSL), experimental
 
+> **Community supplement:** See [Windows CPU and NVIDIA setup](WINDOWS_GPU_CPU.md) for an Ubuntu 24.04 / NVIDIA route tested on one RTX 3070 Ti system, an explicitly untested CPU alternative, private cookie storage, and a Windows launcher. Contributed by [Noa4902](https://github.com/Noa4902), based on Yam Meir's project.
+
 > ⚠️ **Not tested by the author.** The verified, supported path is macOS. See [README.md](README.md). These Windows instructions run the **exact same `transcribe.sh`** inside WSL (Linux on Windows), so the core is the same proven pipeline. What hasn't been confirmed is the install steps below. **If you try this, please open an issue or message me with what worked and what didn't.**
 
 The one real difference from macOS: there's no Metal acceleration on Windows, so transcription runs on the CPU and is slower. It still works. If you have an NVIDIA GPU, whisper.cpp can be built with CUDA for a big speed-up (not covered here).
