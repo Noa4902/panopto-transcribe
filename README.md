@@ -40,9 +40,27 @@ curl -L -o ~/whisper-models/ggml-large-v3-turbo.bin \
 
 > The model is ~1.6 GB. You only download it once.
 
-### On Windows?
+## Windows setup / התקנה ב-Windows
 
-The verified path is macOS (above). Windows works through WSL, but those steps have **not been tested by the author**. See **[WINDOWS.md](WINDOWS.md)** (experimental). If you try it, please report back.
+Community setup guides contributed by [Noa4902](https://github.com/Noa4902), based on Yam Meir's original project:
+
+- **[English guide](WINDOWS_GPU_CPU.md)**
+- **[מדריך בעברית](WINDOWS_GPU_CPU_HE.md)**
+
+| Route | Validation status |
+| --- | --- |
+| NVIDIA GPU through WSL and Ubuntu 24.04 | Tested on one RTX 3070 Ti system: CUDA inference and one authenticated Panopto recording completed |
+| CPU-only, without NVIDIA or CUDA | Documented alternative; **not tested by the contributor** |
+
+The guides include private cookie storage outside the repository and instructions for creating a Windows double-click launcher. The launcher reached the URL prompt in testing; automatic folder opening after a full run has not yet been confirmed. The original transcription script is unchanged.
+
+<div dir="rtl">
+
+**למשתמשי Windows:** המדריך בעברית כולל התקנה, הגדרת תמלול לעברית והפעלה באמצעות הדבקת קישור. מסלול NVIDIA נבדק במחשב אחד; מסלול CPU לא נבדק על ידי תורמת המדריך. ההסברים כוללים גם את מגבלות הכלי ומה עדיין לא אומת.
+
+</div>
+
+The original author's [Windows instructions](WINDOWS.md) remain available and are labeled experimental. These community tests do not establish compatibility with every Windows computer or GPU.
 
 ---
 
