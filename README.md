@@ -40,7 +40,7 @@ curl -L -o ~/whisper-models/ggml-large-v3-turbo.bin \
 
 > The model is ~1.6 GB. You only download it once.
 
-## Windows setup / התקנה ב-Windows
+## Prerequisites (Windows)
 
 Community setup guides contributed by [Noa4902](https://github.com/Noa4902), based on Yam Meir's original project:
 
