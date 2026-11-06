@@ -1,5 +1,7 @@
 # Windows transcription with WSL: CPU and NVIDIA options
 
+[English](WINDOWS_GPU_CPU.md) | [עברית](WINDOWS_GPU_CPU_HE.md)
+
 This supplements [WINDOWS.md](WINDOWS.md). The original transcription pipeline is unchanged.
 
 ## Choose a route
