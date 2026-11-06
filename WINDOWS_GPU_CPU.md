@@ -164,6 +164,24 @@ This check does not validate whether the session is still authenticated. Cookies
 
 ## 7. Add a local launcher
 
+### Use a direct Panopto link
+
+Paste a link copied from **Panopto itself**, not the Moodle page that embeds it. Moodle links such as `/mod/lti/view.php?id=...` can redirect the downloader to the university login page and fail with `Unsupported URL`.
+
+If the recordings appear inside Moodle:
+
+1. Open the course's recording list in your browser and sign in normally.
+2. Click **Open in Panopto / Open in a new window**, shown as a square with an outward arrow (↗). In the tested folder view, it was next to **Subscribe**.
+3. Copy the address from the newly opened Panopto tab. For one recording, open its Panopto viewer or use its Share / Copy link option.
+4. Paste that direct link into the launcher.
+
+Typical direct links are:
+
+- Recording: `https://YOUR-SCHOOL.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=...`
+- Folder: `https://YOUR-SCHOOL.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx#folderID=...`
+
+The domain and URL parameters can vary. A link merely opening successfully in your signed-in browser does not prove the downloader can access it. The cookie session must also be valid. Folder media is currently downloaded before transcription begins; start with a single recording for the first test.
+
 Create `run-local.sh` inside `~/tools/panopto-transcribe` with the following contents. Do not overwrite an existing customized launcher without reviewing it.
 
 ```bash
