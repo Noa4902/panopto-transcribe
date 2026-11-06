@@ -79,6 +79,10 @@ That's it. See [`cookies.example.txt`](cookies.example.txt) for the exact format
 
 ---
 
+### Downloadable Windows launchers
+
+Ready-made files: [run-local.sh](run-local.sh) and [Panopto-Transcribe.bat](Panopto-Transcribe.bat). See the [English](WINDOWS_GPU_CPU.md#ready-to-download-launcher-files) or [Hebrew](WINDOWS_GPU_CPU_HE.md) guide for placement, CPU configuration, and validation status. These new launcher revisions have not yet been run end-to-end; keep a working local launcher until tested.
+
 ## Usage
 
 ### Use a direct Panopto link
