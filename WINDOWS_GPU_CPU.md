@@ -1,4 +1,6 @@
-# Windows transcription with WSL: CPU and NVIDIA options
+# Transcribing Panopto Recordings
+
+A Windows installation and usage guide with WSL, including NVIDIA GPU and CPU options.
 
 [English](WINDOWS_GPU_CPU.md) | [עברית](WINDOWS_GPU_CPU_HE.md)
 
