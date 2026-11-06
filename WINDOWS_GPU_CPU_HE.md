@@ -1,6 +1,8 @@
 <div dir="rtl">
 
-# תמלול ב-Windows עם WSL: מסלולי NVIDIA ו-CPU
+# תמלול הקלטות ב-Panopto
+
+מדריך התקנה ושימוש ב-Windows באמצעות WSL, עם מסלולי NVIDIA ו-CPU.
 
 [English](WINDOWS_GPU_CPU.md) | **עברית**
 
