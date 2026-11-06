@@ -162,6 +162,21 @@ echo "Cookies file exists and is not empty"
 
 This check does not validate whether the session is still authenticated. Cookies may expire and require a fresh export. Keeping the file outside the repository avoids relying solely on `.gitignore`.
 
+## Ready-to-download launcher files
+
+- [run-local.sh](run-local.sh): save beside `transcribe.sh` in `~/tools/panopto-transcribe` inside Ubuntu.
+- [Panopto-Transcribe.bat](Panopto-Transcribe.bat): save on the Windows Desktop or another convenient Windows folder.
+
+Open each file and use GitHub's **Download raw file** button; avoid saving the HTML page or adding a `.txt` extension. These files are on this documentation branch; cloning the original upstream repository does not include them. Keep an existing local launcher as a backup before replacing it.
+
+The BAT defaults to `Ubuntu-24.04` and `~/tools/panopto-transcribe/run-local.sh`; no Linux username needs editing. It prompts for the URL inside Ubuntu and opens the output folder after success. For a custom installation, edit only the trusted distribution/launcher configuration lines; the documented launcher path contains no spaces. The shell launcher locates the repository from its own directory and defaults to Hebrew and the CUDA build. It also rejects Moodle LTI links with a direct-Panopto-link explanation.
+
+For the untested CPU route, set `WHISPER_BUILD=build-cpu` and the appropriate `WHISPER_MODEL` inside `run-local.sh` before its default assignments; alternatively use the manual CPU substitutions below.
+
+**Validation:** these downloadable launchers add path handling and preflight checks beyond the previously used local versions. Their full execution has not yet been verified. The editing environment blocked Bash execution, so even the attempted syntax check could not run. After saving in Ubuntu, run `bash -n ~/tools/panopto-transcribe/run-local.sh` and test one recording before normal use. Existing working installations do not need to replace their launcher.
+
+The manual snippets below remain available as an alternative.
+
 ## 7. Add a local launcher
 
 ### Use a direct Panopto link
